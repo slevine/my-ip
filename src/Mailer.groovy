@@ -3,6 +3,9 @@ import javax.mail.Message
 import javax.mail.internet.MimeMessage
 import javax.mail.internet.InternetAddress
 
+@Grab(group = 'javax.activation', module = 'activation', version = '1.1')
+@Grab(group = 'javax.mail', module = 'mail', version = '1.4')
+
 /**
  * Created by IntelliJ IDEA.
  * User: Steve
