@@ -1,29 +1,47 @@
 What's My Ip?
 ==============
-This project was born out necesity to keep up with my ever changing IP
-address after switching ISP's earlier this year.
+This project consists of a set of scripts that perform the following tasks:
 
-There are several services running at home that I need access to on a
-daily basis.  If my ip changes over night, after a brown out, or for
-some other reason, I need to know about it asap.
+* Obtains the current IP address of the server where it is running
+* Looks up the most recent IP address of the server in a log file
+* If the current IP address is different that the most recent IP address:
+  * Updates the log file with the current IP address
+  * Send the new IP address in a customizable email to a configurable address
+* If the IP address's are the same, it does nothing. 
 
-There are two different implmentations of this project, one in Ruby, and
-one in Groovy.
+This project was born out of my necessity to keep up with my ever changing IP address after switching ISP's earlier this year. There are several services running at home that I need access to on a daily basis.  If my IP changes over night, after a brown out, or for some other reason, I need to know about it asap.
+
+There are two different implementations of this project, one in Ruby, and one in Groovy.
 
 * master branch: groovy
 * ruby branch: ruby (obviously)
 
-
 Requirements
 ------------
-The only requirement for this project is a configured recent version of [Groovy][] [installed][].
+The only requirement to run this is to have a recent version of [Groovy][] [installed][] and configured properly.
+
+Configuration
+-------------
+Update MailProperties.groovy to match your environmental settings.
+
+    mail {
+      smtp.auth = 'true'
+      host = 'somehost.org' <-- update
+      username = 'dns-change@somehost.org' <-- update
+      password = 'password' <-- update
+    }
+
+    message {
+      to = 'me@me.com' <-- update
+      from = 'dns-change@somehost.org' <-- update
+    }
 
 
-Running
+Running 
 -------
 Since this project is leveraging [Grape][] (The Groovy Adaptable Packaging Engine or Groovy Advanced Packaging Engine), the only thing you need to do to run this script is:
 
-    groovy whatsMyIp.groovy
+    groovy whatsMyIp.groovy 
 
 Better Yet: Run as a daily cron job
 ----------
