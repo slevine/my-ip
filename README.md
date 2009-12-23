@@ -22,7 +22,7 @@ The only requirement to run this is to have a recent version of [Groovy][] [inst
 
 Configuration
 -------------
-Update MailProperties.groovy to match your environmental settings.
+Update places in MailProperties.groovy marked with '<-- update' to match your environmental settings.
 
     mail {
       smtp.auth = 'true'
