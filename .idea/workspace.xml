@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="4625ed38-f650-4f31-9dc1-0a0741bfccf4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mailer.groovy" afterPath="$PROJECT_DIR$/src/Mailer.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path=".idea/workspace.xml" />
@@ -81,19 +80,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mailer.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Mailer.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Mailer.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="6" selection-start="271" selection-end="271" vertical-scroll-proportion="0.08465608">
+            <state line="7" column="6" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="setupGroovyLib.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/setupGroovyLib.groovy">
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
+            <state line="39" column="41" selection-start="1346" selection-end="1346" vertical-scroll-proportion="0.84210527">
               <folding />
             </state>
           </provider>
@@ -127,6 +126,7 @@
         <option value="$PROJECT_DIR$/src/OneAndOneMailer.groovy" />
         <option value="$PROJECT_DIR$/src/setupGroovyLib.groovy" />
         <option value="$PROJECT_DIR$/src/Mailer.groovy" />
+        <option value="$PROJECT_DIR$/src/README.md" />
       </list>
     </option>
   </component>
@@ -250,6 +250,53 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="SpecsRunConfiguration" factoryName="Specs">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="FtpUpload" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" />
+      <extension name="snapshooter" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="FtpUpload" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -325,6 +372,21 @@
       <setting name="params" value="" />
       <setting name="workDir" value="$PROJECT_DIR$" />
       <setting name="debug" value="false" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="FtpUpload" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="version" value="false" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -414,20 +476,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/setupGroovyLib.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/whatsMyIp.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MailProperties.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="0" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
@@ -442,7 +490,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Mailer.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="6" selection-start="271" selection-end="271" vertical-scroll-proportion="0.08465608">
+        <state line="7" column="6" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/whatsMyIp.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="41" selection-start="1346" selection-end="1346" vertical-scroll-proportion="0.84210527">
           <folding />
         </state>
       </provider>
