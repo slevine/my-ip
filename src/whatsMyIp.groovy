@@ -1,3 +1,5 @@
+#!/usr/bin/env groovy
+
 /**
  * Created by IntelliJ IDEA.
  * User: Steve

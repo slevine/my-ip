@@ -39,11 +39,17 @@ Update places in MailProperties.groovy marked with '<-- update' to match your en
 
 Running 
 -------
-Since this project is leveraging [Grape][] (The Groovy Adaptable Packaging Engine or Groovy Advanced Packaging Engine), the only thing you need to do to run this script is:
+Since this project is leveraging [Grape][] (The Groovy Adaptable Packaging Engine or Groovy Advanced Packaging Engine), the only thing you need to do to run this script is change in to the directory containing the script and invoke:
 
-    groovy whatsMyIp.groovy 
+    ./whatsMyIp.groovy 
 
-Better Yet: Run as a daily cron job
+Note: If you are unable to invoke the command make sure it has execute permissions (755). 
+
+On the Windows platform you need to invoke it with:
+  
+    groovy whatsMyIp.groovy
+
+Better Yet: Run as a daily Cron job
 ----------
 Set this up as a [cron][] job (in a mac/linux environment) by adding the following line to your crontab (runs every day at 9a and 12p):
 
