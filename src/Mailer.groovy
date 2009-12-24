@@ -3,8 +3,10 @@ import javax.mail.Message
 import javax.mail.internet.MimeMessage
 import javax.mail.internet.InternetAddress
 
-@Grab(group = 'javax.activation', module = 'activation', version = '1.1')
-@Grab(group = 'javax.mail', module = 'mail', version = '1.4')
+@Grapes([
+  @Grab(group = 'javax.activation', module = 'activation', version = '1.1'),
+  @Grab(group = 'javax.mail', module = 'mail', version = '1.4')
+])
 
 /**
  * Created by IntelliJ IDEA.
@@ -15,26 +17,26 @@ import javax.mail.internet.InternetAddress
 
 class Mailer {
 
-  static def config = new ConfigSlurper("message").parse(new File('MailProperties.groovy').toURL())
+  static def s_config = new ConfigSlurper("message").parse(new File('MailProperties.groovy').toURL())
 
   static def deliverIpAddressChangeMessage(ipAddress) {
     def subject = "IP Address Changed to ${ipAddress}"
     def message = "IP Address changed to ${ipAddress}.\nPlease update your configurations."
-    sendMail("${config.message.to}".toString(), "${config.message.from}".toString(), subject, message)
+    sendMail("${s_config.message.to}".toString(), "${s_config.message.from}".toString(), subject, message)
   }
 
   static private sendMail(to, from, subject, message) {
-    def session = Session.getDefaultInstance(config.toProperties(), null)
+    def session = Session.getDefaultInstance(s_config.toProperties(), null)
 
-    def msg = new MimeMessage(session)
-    msg.setRecipients Message.RecipientType.TO, to
-    msg.setSubject subject
-    msg.setFrom new InternetAddress(from)
-    msg.setContent message.toString(), "text/plain"
+    def mimeMessage = new MimeMessage(session)
+    mimeMessage.setRecipients Message.RecipientType.TO, to
+    mimeMessage.setSubject subject
+    mimeMessage.setFrom new InternetAddress(from)
+    mimeMessage.setContent message.toString(), "text/plain"
 
-    def t = session.getTransport("smtp")
-    t.connect "${config.mail.username}".toString(), "${config.mail.password}".toString()
-    t.sendMessage msg, msg.getAllRecipients()
+    def transport = session.getTransport("smtp")
+    transport.connect "${s_config.mail.username}".toString(), "${s_config.mail.password}".toString()
+    transport.sendMessage mimeMessage, mimeMessage.allRecipients
   }
 
 }
